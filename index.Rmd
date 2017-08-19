@@ -1,0 +1,20 @@
+---
+title: "Week2_assignment"
+author: "Sourabh Roy"
+date: "8/19/2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+```{r , echo=FALSE}
+library(leaflet)
+my_map_icon <- makeIcon(iconUrl = "./image.png",iconWidth = 25)
+ 
+my_map <- leaflet() %>% addTiles() %>% addMarkers(lat=22.630121 ,lng= 88.433977,icon = my_map_icon,popup = "Working Coursera assignment")
+my_map
+```
+
